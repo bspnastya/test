@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4D16C7E3283AA0D2008EB287 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D16C7E2283AA0D2008EB287 /* main.cpp */; };
+		4D16C803283AA267008EB287 /* matrix1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D16C802283AA267008EB287 /* matrix1.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D16C7FF283AA267008EB287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D16C7FB283AA267008EB287 /* mymatrix1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D16C7C9283AA01F008EB287;
+			remoteInfo = mymatrix1;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4D16C7DD283AA0D2008EB287 /* CopyFiles */ = {
@@ -25,6 +36,11 @@
 /* Begin PBXFileReference section */
 		4D16C7DF283AA0D2008EB287 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D16C7E2283AA0D2008EB287 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4D16C7E9283AA10E008EB287 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		4D16C7FB283AA267008EB287 /* mymatrix1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mymatrix1.xcodeproj; path = ../../mymatrix1/mymatrix1.xcodeproj; sourceTree = "<group>"; };
+		4D16C801283AA267008EB287 /* matrix1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix1.h; sourceTree = "<group>"; };
+		4D16C802283AA267008EB287 /* matrix1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix1.cpp; sourceTree = "<group>"; };
+		4D16C804283AA28A008EB287 /* Products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Products; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +74,21 @@
 			isa = PBXGroup;
 			children = (
 				4D16C7E2283AA0D2008EB287 /* main.cpp */,
+				4D16C804283AA28A008EB287 /* Products */,
+				4D16C802283AA267008EB287 /* matrix1.cpp */,
+				4D16C801283AA267008EB287 /* matrix1.h */,
+				4D16C7FB283AA267008EB287 /* mymatrix1.xcodeproj */,
+				4D16C7E9283AA10E008EB287 /* data.txt */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		4D16C7FC283AA267008EB287 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D16C800283AA267008EB287 /* libmymatrix1.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +136,12 @@
 			mainGroup = 4D16C7D6283AA0D2008EB287;
 			productRefGroup = 4D16C7E0283AA0D2008EB287 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4D16C7FC283AA267008EB287 /* Products */;
+					ProjectRef = 4D16C7FB283AA267008EB287 /* mymatrix1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4D16C7DE283AA0D2008EB287 /* test */,
@@ -114,11 +149,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4D16C800283AA267008EB287 /* libmymatrix1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libmymatrix1.dylib;
+			remoteRef = 4D16C7FF283AA267008EB287 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D16C7DB283AA0D2008EB287 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D16C803283AA267008EB287 /* matrix1.cpp in Sources */,
 				4D16C7E3283AA0D2008EB287 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
