@@ -7,6 +7,7 @@
 - 🔭 I’m currently working on matrix class 
 - 🌱 This is my matrix class, ready for use, designed as a dynamic library. 
 - 💬 The library is ready to use and support mathematical operations related to matrices, as well as the implementation of the principal component algorithm. 
+- ⚠️ The main class "Matrix" is implemented. Additions to this class: classes "Symmetric matrix", "Triangular matrix", "Unit matrix", "Diagonal matrix", "Principal component method".
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/bspnastya)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/telegram.svg' alt='telegram' height='40'>](bspnastya) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg' alt='dev' height='40'>](https://dev.to/bspnastya )   
 
